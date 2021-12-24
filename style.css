@@ -1,0 +1,310 @@
+/* FONT */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap");
+
+/* CSS RESET & DEFAULT FONT */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+main {
+  height: 80%;
+}
+
+/* MAIN SECTION START */
+
+#main {
+  height: 100vh;
+  background: url("assets/main-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-navbar {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.button-play {
+  border-radius: 4px;
+  font-weight: 700;
+  padding: 1.6rem 8rem;
+  background: #ffb548;
+  border-color: #ffb548;
+}
+
+.intro-text {
+  font-weight: 700;
+  font-family: "Arial";
+  font-size: 72px;
+}
+
+#main a {
+  text-decoration: none;
+  color: white;
+  font-family: "Open Sans";
+}
+
+/* MAIN SECTION END */
+
+/* STORYPAGE START */
+
+#storypage {
+  height: 100vh;
+  background: url("assets/the-games-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Arial";
+}
+
+#storypage .carousel-indicators > button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .storypage-container {
+    flex-direction: column;
+    align-content: center;
+    padding-top: 12rem;
+  }
+  .story-text__container {
+    text-align: center;
+  }
+}
+
+#storypage h1 {
+  font-size: 56px;
+}
+
+#storypage h3 {
+  font-size: 24px;
+}
+
+.story-text__container {
+  margin-top: -23rem;
+  margin-right: 1rem;
+}
+
+.carousel-control-prev {
+  margin-left: -5rem;
+}
+
+.carousel-control-next {
+  margin-right: -5rem;
+}
+
+/* STORYPAGE END */
+
+/* FEATURE START */
+
+#features {
+  height: 100vh;
+  background: url("assets/features.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Arial";
+}
+
+.filler-feature {
+  width: 60%;
+}
+
+.feature-text__container {
+  margin-left: -2rem;
+}
+
+.feature-text__container h1 {
+  font-size: 56px;
+}
+
+.feature-text__container h3 {
+  font-size: 24px;
+}
+
+.prog-bar li::before {
+  content: "";
+  position: absolute;
+  background: white;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  margin-left: -2rem;
+  margin-top: 0.7rem;
+}
+
+.prog-bar .empty-list::before {
+  content: "";
+  position: absolute;
+  background: none;
+  border: 2px solid white;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  margin-left: -2rem;
+  margin-top: 0.7rem;
+}
+
+.prog-bar li span {
+  font-family: "Arial";
+  font-size: 24px;
+  color: #ffb548;
+}
+
+.prog-bar li p {
+  font-family: "Open Sans";
+}
+
+/* FEATURE END */
+
+/* SYSREQ START */
+
+#sysreq {
+  height: 100vh;
+  background: url("assets/requirements.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Arial";
+}
+
+#sysreq h3 {
+  font-size: 14px;
+}
+
+#sysreq h1 {
+  font-size: 3rem;
+}
+
+#sysreq .sysreq-container {
+  width: 35%;
+}
+
+@media only screen and (max-width: 1024px) {
+  #sysreq .sysreq-container {
+    width: 100%;
+  }
+  #sysreq h1 {
+    text-align: center;
+  }
+}
+
+#sysreq table tr td span {
+  font-size: 24px;
+  color: #ffb548;
+}
+
+#sysreq table {
+  border-bottom-right-radius: 50%;
+}
+
+/* SYSREQ END */
+
+/* TOP SCORES START */
+
+#topscores {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  font-family: "Arial";
+  box-sizing: border;
+}
+
+#topscores .score-text__wrapper {
+  margin: 3rem;
+  padding: 3rem;
+}
+
+#topscores .button-scores {
+  border-radius: 0.5rem;
+  font-weight: 700;
+  padding: 1rem 6rem;
+  background: #ffb548;
+  border-color: #ffb548;
+}
+
+#topscores .card-score__wrapper {
+  margin: 3rem;
+  padding: 3rem;
+}
+
+#topscores .card-score {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  width: 28rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+#topscores .card-score__pic {
+  height: 4rem;
+  border-radius: 100%;
+  box-shadow: 10px 1px rgba(255, 181, 72, 1);
+}
+
+#topscores .card-score__id p {
+  line-height: 0.5rem;
+}
+
+#topscores .card-score__id p span {
+  font-size: 24px;
+  color: #ffb548;
+}
+
+#topscores .card-score__icon {
+  width: 18px;
+  height: 14px;
+}
+
+#topscores .card-score__text {
+  font-family: "Open Sans";
+}
+
+#topscores .card-score__text p {
+  font-size: 18px;
+  color: #fff;
+}
+
+#topscores .card-score__tag {
+  font-size: 14px;
+}
+
+#topscores .jade {
+  margin-left: -10rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  #topscores {
+    height: auto;
+    flex-direction: column;
+  }
+
+  #topscores .score-text__wrapper {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  #topscores .card-score__wrapper {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  #topscores .jade {
+    margin-left: 0;
+  }
+}
+
+/* TOPSCORE END */
+
+/* NEWSLETTER START */
+
+#newsletter {
+  height: 100vh;
+  background: rgba(0, 0, 0);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Arial";
+}
