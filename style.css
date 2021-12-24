@@ -8,8 +8,9 @@
 }
 
 nav {
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 700;
+  font-family: "Open Sans";
+  font-size: 12px;
 }
 
 main {
@@ -23,6 +24,10 @@ main {
   background: url("assets/main-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#main ul li {
+  font-family: "Bebas Neue";
 }
 
 .bg-navbar {
@@ -47,6 +52,12 @@ main {
   text-decoration: none;
   color: white;
   font-family: "Open Sans";
+}
+
+@media only screen and (max-width: 1024px) {
+  .intro-text {
+    font-size: 3rem;
+  }
 }
 
 /* MAIN SECTION END */
@@ -99,6 +110,13 @@ main {
   margin-right: -5rem;
 }
 
+@media only screen and (max-width: 700px) {
+  #storypage .carousel-container {
+    width: 70%;
+    margin-top: 4rem;
+  }
+}
+
 /* STORYPAGE END */
 
 /* FEATURE START */
@@ -109,6 +127,14 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Arial";
+}
+
+@media only screen and (max-width: 1024px) {
+  #features {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url(assets/features.jpg);
+    background-size: cover;
+  }
 }
 
 .filler-feature {
@@ -127,6 +153,14 @@ main {
   font-size: 24px;
 }
 
+.prog-bar:nth-child(2) {
+  border-left: 5px solid white;
+}
+
+.prog-bar li {
+  padding-left: 22px;
+}
+
 .prog-bar li::before {
   content: "";
   position: absolute;
@@ -135,7 +169,7 @@ main {
   height: 16px;
   border-radius: 100%;
   margin-left: -2rem;
-  margin-top: 0.7rem;
+  margin-top: -1rem;
 }
 
 .prog-bar .empty-list::before {
@@ -147,7 +181,20 @@ main {
   height: 16px;
   border-radius: 100%;
   margin-left: -2rem;
-  margin-top: 0.7rem;
+  margin-top: 2.2rem;
+}
+
+.prog-bar .empty-list__x::before {
+  content: "";
+  position: absolute;
+  background: none;
+  border: 2px solid white;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  margin-left: -1.7rem;
+  margin-top: 2.2rem;
+  transform: translateY(-26px);
 }
 
 .prog-bar li span {
@@ -307,4 +354,36 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Arial";
+}
+
+#newsletter h1 {
+  font-size: 64px;
+  font-family: "Arial";
+}
+
+#newsletter h3 {
+  font-size: 24px;
+  font-family: "Arial";
+}
+
+#newsletter .button-subscribe {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0.5rem 4rem;
+  border: none;
+  border-radius: 4px;
+  background: linear-gradient(rgba(255, 181, 72, 1), rgba(243, 175, 52, 1));
+}
+
+#newsletter .navbar-bottom p {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#newsletter .nav-item {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Open Sans";
 }
