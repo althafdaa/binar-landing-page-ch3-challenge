@@ -277,7 +277,7 @@
             </td>
           </tr>
           <tr>
-            <td colspan="2">
+            <td class="graphic" colspan="2">
               <span>GRAPHICS</span>
               <p>
                 NVIDIA GeForce GTX 660 2GB or AMD Radeon HD 7850 2GB DirectX11
@@ -295,8 +295,8 @@
       id="topscores"
     >
       <div class="p-lg-5 m-lg-5 score-text__wrapper">
-        <h1 class="mb-4">TOP SCORES</h1>
-        <p class="mb-4">
+        <h1 class="mb-4 text-white">TOP SCORES</h1>
+        <p class="mb-4 text-white">
           This top scores from various game provided <br />
           on this platform
         </p>
@@ -388,8 +388,10 @@
         "
       >
         <!-- main news -->
-        <div class="row d-flex align-items-center h-100">
-          <div class="col-md-6"></div>
+        <div class="main-news row d-flex align-items-center h-100">
+          <div class="col-md-6 news-filler">
+            <img src="assets/stone_2.png" class="img-stone" alt="stone" />
+          </div>
           <div class="col-md-6">
             <h3 class="mb-4">Want to stay in touch ?</h3>
             <h1 class="mb-4">NEWSLETTER<br />SUBSCRIBE</h1>
@@ -400,16 +402,16 @@
               don’t spam.
             </p>
             <div class="row">
-              <div class="col-6">
+              <div class="col-lg-6 input-container">
+                <label for="email">your email address</label>
                 <input
-                  type="password"
-                  id="inputPassword6"
+                  type="email"
+                  id="email"
                   class="form-control py-2 pe-5"
-                  aria-describedby="passwordHelpInline"
                   placeholder="youremail@binar.co.id"
                 />
               </div>
-              <div class="col-6">
+              <div class="col-lg-6 button-container">
                 <button type="button" class="button-subscribe">
                   Subscribe now
                 </button>

@@ -134,6 +134,15 @@ main {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
       url(assets/features.jpg);
     background-size: cover;
+    justify-content: center;
+  }
+
+  #features .filler-feature {
+    display: none;
+  }
+
+  #features .feature-progress {
+    margin-left: 5rem;
   }
 }
 
@@ -245,17 +254,14 @@ main {
   color: #ffb548;
 }
 
-#sysreq table {
-  border-bottom-right-radius: 50%;
-}
-
 /* SYSREQ END */
 
 /* TOP SCORES START */
 
 #topscores {
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(assets/top-score-bg.png);
   font-family: "Arial";
   box-sizing: border;
 }
@@ -349,11 +355,19 @@ main {
 /* NEWSLETTER START */
 
 #newsletter {
-  height: 100vh;
-  background: rgba(0, 0, 0);
+  height: 115vh;
+  background: rgba(8, 10, 11, 1);
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Arial";
+  box-sizing: border-box;
+}
+
+#newsletter .img-stone {
+  width: 60%;
+}
+
+#newsletter .news-filler {
 }
 
 #newsletter h1 {
@@ -366,14 +380,40 @@ main {
   font-family: "Arial";
 }
 
+#newsletter .button-container {
+  margin-top: -0.5rem;
+}
+
 #newsletter .button-subscribe {
   font-family: "Open Sans";
   font-size: 16px;
   font-weight: 700;
-  padding: 0.5rem 4rem;
+  padding: 1.2rem 4rem;
   border: none;
   border-radius: 4px;
   background: linear-gradient(rgba(255, 181, 72, 1), rgba(243, 175, 52, 1));
+}
+
+#newsletter .button-subscribe:active {
+  transform: scale(0.98);
+  color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  #newsletter {
+    background: rgba(8, 10, 11, 1);
+  }
+
+  #newsletter .news-filler {
+    display: none;
+  }
+  #newsletter .button-subscribe {
+    padding: 0.5rem 2rem;
+  }
+  #newsletter .button-container {
+    margin-top: 1rem;
+    width: 100%;
+  }
 }
 
 #newsletter .navbar-bottom p {
@@ -382,8 +422,35 @@ main {
   font-weight: 400;
 }
 
+#newsletter .input-container {
+  margin-top: -2rem;
+}
+
 #newsletter .nav-item {
   font-size: 12px;
   font-weight: 700;
   font-family: "Open Sans";
+}
+
+#newsletter label {
+  color: rgba(255, 255, 255, 0.3);
+  transform: translateY(30px);
+  margin-left: 0.8rem;
+}
+
+#newsletter input[type="email"] {
+  color: white;
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  line-height: 48px;
+  position: relative;
+}
+
+#newsletter input::placeholder {
+  color: rgba(255, 181, 72, 1);
+  font-family: "Open Sans";
+  font-size: 18px;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0.5rem;
 }
