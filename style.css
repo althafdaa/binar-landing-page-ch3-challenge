@@ -7,6 +7,10 @@
   margin: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 nav {
   font-weight: 700;
   font-family: "Open Sans";
