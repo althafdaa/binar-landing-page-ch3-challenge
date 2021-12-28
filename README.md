@@ -4,13 +4,13 @@ Chapter 3 individual project based on Figma design from Binar Academy Fullstack 
 
 ### Screenshot Desktop View
 
-![](./screenshotdesktop1.jpg)
-![](./screenshotdesktop2.png)
+![](./Screenshotdesktop1.jpg)
+![](./Screenshotdesktop2.png)
 
 ### Screenshot Mobile view
 
-![](./screenshotmobile1.png)
-![](./screenshotmobile2.png)
+![](./Screenshotmobile1.png)
+![](./Screenshotmobile2.png)
 
 ## My Process
 
