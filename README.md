@@ -16,10 +16,10 @@ Chapter 3 individual project based on Figma design from Binar Academy Fullstack 
 
 ### Built with
 
--HTML5 Markup
--CSS3
--Bootstrap 5
--Slicing from Figma
+- Semantic HTML5 markup
+- CSS3
+- Bootstrap 5
+- Slicing from Figma
 
 ### What I Learned
 
